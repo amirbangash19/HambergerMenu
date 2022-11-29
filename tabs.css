@@ -1,0 +1,60 @@
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #f7f7f7;
+    color: #000;
+    font-weight: 700;;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: #f7f7f7;
+    color: #000;
+    font-weight: 700;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background: #000;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    border-top: none;
+  }
+
+  .product-box-links {
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+.product-box-links .ghnm-tm-pbl-link {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.product-box-links .ghnm-tm-pbl-link.acv .ghnm-tm-pbl-banner {
+    background-color: #d22730;
+}
+
+.offcanvas-body .product-box-links .ghnm-tm-pbl-link.acv .ghnm-tm-pbl-item::before {
+    background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/acv-hamburger_400x400.jpg?v=1650394335);
+}
