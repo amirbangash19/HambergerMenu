@@ -1,60 +1,308 @@
+@font-face {
+  font-family: Gilory;
+  src: url('./Gilroy-Font/Gilroy-Light.otf');
+}
+
+* {
+  font-family: Gilory;
+}
+
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    border-bottom: 1px solid #f7f7f7;
-    color: #000;
-    font-weight: 700;;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: #f7f7f7;
-    color: #000;
-    font-weight: 700;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background: #000;
-    color: #fff;
-    font-weight: 700;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    border-top: none;
-  }
+  overflow: hidden;
+  border-bottom: 1px solid #f7f7f7;
+  color: #000;
+  font-weight: 700;
+}
 
-  .product-box-links {
-    display: grid;
-    padding-top: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-  }
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #f7f7f7;
+  color: #000;
+  font-weight: 700;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+.product-box-links {
+  display: grid;
+  padding-top: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
 
 .product-box-links .ghnm-tm-pbl-link {
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }
 
 .product-box-links .ghnm-tm-pbl-link.acv .ghnm-tm-pbl-banner {
-    background-color: #d22730;
+  background-color: #d22730;
 }
 
-.offcanvas-body .product-box-links .ghnm-tm-pbl-link.acv .ghnm-tm-pbl-item::before {
-    background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/acv-hamburger_400x400.jpg?v=1650394335);
+.product-box-links .ghnm-tm-pbl-link.acv .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/acv-hamburger_400x400.jpg?v=1650394335);
+}
+
+.product-box-links .ghnm-tm-pbl-link:not(.ghnm-tm-pbl-new) .ghnm-tm-pbl-banner {
+  display: none;
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-banner {
+  text-align: center;
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-banner .ghnm-tm-pbl-banner-text {
+  color: #fff;
+  font-size: .82em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.product-box-links .ghnm-tm-pbl-link.acv .ghnm-tm-pbl-item {
+  background-color: #eddedb;
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-item {
+  display: flex;
+  justify-content: right;
+  padding: 10px;
+  align-items: center;
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-item:before {
+  content: "";
+  margin-right: -10px;
+  width: 60px;
+  height: 67px;
+  background-position: left center;
+  background-size: cover;
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-item .content-right {
+  width: 65%;
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-item .content-right .cta-text {
+  font-weight: 700;
+}
+
+span.higlight-border {
+  position: relative;
+  z-index: 2;
+}
+
+.product-box-links .ghnm-tm-pbl-link.acv .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(210, 39, 48, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-item span.higlight-border:after {
+  height: 8px;
+}
+
+span.higlight-border:after {
+  content: "";
+  position: absolute;
+  height: 33%;
+  width: 100%;
+  display: block;
+  left: 0;
+  bottom: 2px;
+  z-index: -1;
+  background-color: #c01720;
+}
+
+.product-box-links .ghnm-tm-pbl-link .ghnm-tm-pbl-item .content-right .cont-text {
+  line-height: 1;
+  font-size: .76em;
+  font-weight: 700;
+}
+
+.product-box-links .ghnm-tm-pbl-link.ashwagandha .ghnm-tm-pbl-banner {
+  background-color: #00a6dc;
+}
+
+.product-box-links .ghnm-tm-pbl-link.ashwagandha .ghnm-tm-pbl-item {
+  background-color: #d2eae7;
+}
+
+.product-box-links .ghnm-tm-pbl-link.ashwagandha .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/ashwa-hamburger_400x400.jpg?v=1650394382);
+}
+
+.product-box-links .ghnm-tm-pbl-link.ashwagandha .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(0, 166, 220, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.kids_multi .ghnm-tm-pbl-banner {
+  background-color: #ff3333;
+}
+
+.product-box-links .ghnm-tm-pbl-link.kids_multi .ghnm-tm-pbl-item {
+  background-color: #f0db7e;
+}
+
+.product-box-links .ghnm-tm-pbl-link.kids_multi .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/kids-hamburger_400x400.jpg?v=1659566183);
+}
+
+.product-box-links .ghnm-tm-pbl-link.kids_multi .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(255, 51, 51, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.sleep .ghnm-tm-pbl-banner {
+  background-color: #500878;
+}
+
+.product-box-links .ghnm-tm-pbl-link.sleep .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/sleep-hamburger_400x400.jpg?v=1655790494);
+}
+
+.product-box-links .ghnm-tm-pbl-link.sleep .ghnm-tm-pbl-item {
+  background-color: #e0ccf1;
+}
+
+.product-box-links .ghnm-tm-pbl-link.sleep .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(80, 8, 120, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.supergreens .ghnm-tm-pbl-banner {
+  background-color: #32b05d;
+}
+
+.product-box-links .ghnm-tm-pbl-link.supergreens .ghnm-tm-pbl-item {
+  background-color: #d3e9d8;
+}
+
+.product-box-links .ghnm-tm-pbl-link.supergreens .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/sg-hamburger_400x400.jpg?v=1650642669);
+}
+
+.product-box-links .ghnm-tm-pbl-link.supergreens .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(50, 176, 93, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.superfruits .ghnm-tm-pbl-banner {
+  background-color: #f37124;
+}
+
+.product-box-links .ghnm-tm-pbl-link.superfruits .ghnm-tm-pbl-item {
+  background-color: #f8dabe;
+}
+
+.product-box-links .ghnm-tm-pbl-link.superfruits .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/sf-hamburger_400x400.jpg?v=1650394407);
+}
+
+.product-box-links .ghnm-tm-pbl-link.superfruits .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(243, 113, 36, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.immune .ghnm-tm-pbl-banner {
+  background-color: #e8350c;
+}
+
+.product-box-links .ghnm-tm-pbl-link.immune .ghnm-tm-pbl-item {
+  background-color: #ffac7e;
+}
+
+.product-box-links .ghnm-tm-pbl-link.immune .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/immune-hamburger_400x400.jpg?v=1650398008);
+}
+
+.product-box-links .ghnm-tm-pbl-link.immune .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(232, 53, 12, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.womens_multi .ghnm-tm-pbl-banner {
+  background-color: #f22b7b;
+}
+
+.product-box-links .ghnm-tm-pbl-link.womens_multi .ghnm-tm-pbl-item {
+  background-color: #e7bcce;
+}
+
+.product-box-links .ghnm-tm-pbl-link.womens_multi .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/womens-multi-hamburger_400x400.jpg?v=1668445452);
+}
+
+.product-box-links .ghnm-tm-pbl-link.womens_multi .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(242, 43, 123, 0.3);
+}
+
+/* Bites */
+.product-box-links .ghnm-tm-pbl-link.multi .ghnm-tm-pbl-banner {
+  background-color: #017789;
+}
+
+.product-box-links .ghnm-tm-pbl-link.multi .ghnm-tm-pbl-item {
+  background-color: #71c8ba;
+}
+
+.product-box-links .ghnm-tm-pbl-link.multi .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/home_bottle_bites_multi_400x400.png?v=1641598617);
+}
+
+.product-box-links .ghnm-tm-pbl-link.multi .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(1, 119, 137, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.calm .ghnm-tm-pbl-banner {
+  background-color: #66469b;
+}
+
+.product-box-links .ghnm-tm-pbl-link.calm .ghnm-tm-pbl-item {
+  background-color: #a794c7;
+}
+
+.product-box-links .ghnm-tm-pbl-link.calm .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/home_bottle_bites_calm_400x400.png?v=1641598618);
+}
+
+.product-box-links .ghnm-tm-pbl-link.calm .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(102, 70, 155, 0.3);
+}
+
+.product-box-links .ghnm-tm-pbl-link.energy .ghnm-tm-pbl-banner {
+  background-color: #ffb07e;
+}
+
+.product-box-links .ghnm-tm-pbl-link.energy .ghnm-tm-pbl-item {
+  background-color: #ffab38;
+}
+
+.product-box-links .ghnm-tm-pbl-link.energy .ghnm-tm-pbl-item::before {
+  background-image: url(//cdn.shopify.com/s/files/1/0070/0173/5241/files/home_bottle_bites_energy_400x400.png?v=1643044250);
+}
+
+.product-box-links .ghnm-tm-pbl-link.energy .ghnm-tm-pbl-item span.higlight-border::after {
+  background-color: rgba(255, 176, 126, 0.3);
 }
