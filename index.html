@@ -1,29 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Hamberger</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hamberger</title>
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="navbar-container container">
-          <input type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Category</a></li>
-            <button><a href="#">Contact</a></button>
-          </ul>
-          <h1 class="logo">Navbar</h1>
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <input type="checkbox" name="" id="" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+
+        <div class="tab">
+          <button class="tablinks active" onclick="openCity(event, 'Gummies')">Gummies</button>
+          <button class="tablinks" onclick="openCity(event, 'Bites')">Bites</button>
         </div>
-      </nav>
+
+        <!-- Tab Content -->
+        <div id="Gummies" class="tabcontent" style="display: block;">
+          <!-- Product Links -->
+          <div class="product-box-links">
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link acv">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Apple Cider <br> Vinegar Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link ashwagandha">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Ashwagandha<br>Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link kids_multi ghnm-tm-pbl-new">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Kids Multi Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link sleep ghnm-tm-pbl-new">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Dreamy Sleep <br> Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link supergreens">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Supergreens<br>Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link superfruits">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Superfruits<br>Beauty Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link immune">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner" style="display: block;">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Triple Action<br>Immune Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link womens_multi ghnm-tm-pbl-new">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Women's Multi Gummies</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div id="Bites" class="tabcontent">
+          <!-- Product Links -->
+          <div class="product-box-links">
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link multi">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Multi Bites</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link calm">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Calm Bites</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- Product Link -->
+            <a href="#" class="ghnm-tm-pbl-link energy">
+              <div class="ghnm-tm-pbl-holder">
+                <div class="ghnm-tm-pbl-banner">
+                  <p class="ghnm-tm-pbl-banner-text mb-0">NEW PRODUCT</p>
+                </div>
+                <div class="ghnm-tm-pbl-item">
+                  <div class="content-right">
+                    <div class="cta-text"><span class="higlight-border">EXPLORE</span> <i
+                        class="fas fa-chevron-right"></i></div>
+                    <div class="cont-text">Energy Bites</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <a class="order-now-btn-mobile-nav d-md-none" href="#">Order Now</a>
+
+        <!-- Menu -->
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <div class="dropdown" tabindex="1">
+              <i class="drpdwn" tabindex="1"></i>
+              <a class="dropbtn nav-link site-link">Products</a>
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item site-link">Apple Cider Vinegar Gummies</a>
+                <a href="#" class="dropdown-item site-link">Ashwagandha Gummies</a>
+                <a href="#" class="dropdown-item site-link">Superfruits Beauty Gummies</a>
+                <a href="#" class="dropdown-item site-link">Supergreens Gummies</a>
+                <a href="#" class="dropdown-item site-link">Triple Action Immune Gummies</a>
+                <a href="#" class="dropdown-item site-link">Dreamy Sleep Gummies</a>
+                <a href="#" class="dropdown-item site-link">Complete Kids Multi Gummies</a>
+                <a href="#" class="dropdown-item site-link">Women's Complete Multi Gummies</a>
+                <a href="#" class="dropdown-item site-link">Multi Bites</a>
+                <a href="#" class="dropdown-item site-link">Calm Bites</a>
+                <a href="#" class="dropdown-item site-link">Energy Bites</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link site-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown" tabindex="1">
+              <i class="drpdwn" tabindex="1"></i>
+              <a class="dropbtn nav-link site-link">About Us</a>
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item site-link">Our Story</a>
+                <a href="#" class="dropdown-item site-link">Goli@ for Good</a>
+                <a href="#" class="dropdown-item site-link">Inside the Gummy</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link site-link">FAQ</a>
+          </li>
+
+          <div class="align-items-center justify-content-center p-2 p-sm-3 nav-vitamin-angels d-flex d-md-none">
+            <div class="col-auto nva-logo-column">
+              <img src="./assets/Gilroy-Font/img/goli_for_good_white.webp"
+                class="img-fluid nva-logo" title="Vitamin Angels" alt="Vitamin Angels logo">
+            </div>
+            <div class="col col-md-auto nva-text">
+              <p>With every order, Goli® Nutrition will donate a 6-month supply of essential vitamins to a child in need
+                through our 1-for-1 grant with Vitamin Angels and plant a tree with the Eden Reforestation projects.</p>
+            </div>
+          </div>
+        </ul>
+
+
+      </ul>
+      <h1 class="logo">Logo</h1>
+    </div>
+  </nav>
+
+
+  <!-- Script for Tabs -->
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 </body>
+
 </html>
